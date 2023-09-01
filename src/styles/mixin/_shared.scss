@@ -1,0 +1,72 @@
+@mixin shared-background($bg-color){
+    background-color: $bg-color;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.8rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    opacity: 0.8;
+}
+
+@mixin shared-card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.8rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+}
+
+@mixin shared-article{
+    position: relative;
+    border-radius: 1rem;
+     width: 100%;
+     grid-column: span 2;
+     min-height: 350px;
+     height: 100%;
+     cursor: pointer;
+     overflow: hidden;
+}
+
+@mixin shared-article-content($color){
+    position: relative;
+    z-index: 1;
+    padding: 4rem 3rem ;
+    color: $color;
+    width: 80%;
+}
+
+@mixin shared-btn($color){
+    background-color: transparent;
+    border-radius: 25px;
+    padding: 0.2rem 0.5rem;
+    width: fit-content;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    border: 1px solid ;
+    color: $color;
+    border-color: $color;
+}
+
+@mixin hero-btn($color,$bg-color){
+    background-color: $bg-color;
+    border-radius: 25px;
+    padding: 0.1rem 0.5rem;
+    color: $color;
+    width: fit-content;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+
+
